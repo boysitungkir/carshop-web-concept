@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUDI Supercar</title>
+
+    <!-- Font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Racing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="audi.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="content">
+      <div class="navbar-nav">
+        <div class="navbar-logo">
+          <img src="img/audi-logo.png" alt="" />
+        </div>
+
+        <div class="navbar">
+          <li>
+            <a href="">RS-eTron</a>
+            <a href="">Models</a>
+            <a href="">Models</a>
+            <a href="">myAudi login</a>
+          </li>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1>
+          Uncovering the Allure <br />
+          Audi Supercars
+        </h1>
+        <p>
+          Exploring Audi's Technological Innovation, Futuristic Design Racing
+          Heritage in the World of Supercars
+        </p>
+        <div class="input-sec">
+          <form class="button-form">
+            <button type="button">Build & Price</button>
+            <button type="button" id="audi_news">Get Audi news & Update</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <p>Power</p>
+        <h3>637 HP</h3>
+        <p>With Boost Engaged</p>
+      </div>
+      <div class="stat">
+        <p>Battery Size</p>
+        <h3>93 kWh</h3>
+        <p>Gross</p>
+      </div>
+      <div class="stat" id="stat-3">
+        <p>0-60 mph in</p>
+        <h3>3.1 sec</h3>
+        <p>With Boost Engaged</p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="img/image-1.jpg" alt="" />
+          <p class="caption">
+            <span>Audi R8:</span> the Audi R8 is a mid-engine, two-seater <br />
+            supercar that combines luxury with high-performance. It features a
+            <br />
+            striking design, advanced technology, and a powerful V10 engine<br />
+            option. The R8 is renowned for its exceptional handling and agility
+            <br />
+            on the road and track.
+          </p>
+        </div>
+        <div class="item">
+          <img src="img/image-2.jpg" alt="" />
+          <p class="caption">
+            <span>Audi RS7:</span> The Audi RS7 is a high-performance version of
+            <br />
+            the Audi A7, equipped with a V8 engine. It offers a perfect blend of
+            <br />
+            sportiness and practicality, with a spacious interior and advanced
+            <br />
+            technology. The RS7 is celebrated for its lightning-fast <br />
+            acceleration and sophisticated all-wheel-drive system.
+          </p>
+        </div>
+        <div class="item">
+          <img src="img/image-3.jpg" alt="" />
+          <p class="caption">
+            <span>Audi TT RS:</span> The Audi TT RS is a compact sports car that
+            <br />
+            packs a powerful punch with its turbocharged five-cylinder engine.
+            <br />
+            It delivers thrilling performance while maintaining the iconic TT
+            <br />
+            design. The TT RS is known for its sharp handling and exhilarating
+            <br />
+            driving experience.
+          </p>
+        </div>
+        <div class="item">
+          <img src="img/image-4.jpg" alt="" />
+          <p class="caption">
+            <span>Audi Q8:</span> While not a traditional supercar, the Audi Q8
+            <br />
+            is a luxury SUV with a sporty edge. The Q8 features a bold design,
+            <br />
+            spacious interior, and a range of powerful engines. It offers <br />
+            impressive performance and advanced technology, making it a <br />
+            versatile choice for those seeking both luxury and speed.
+          </p>
+        </div>
+        <div class="item">
+          <img src="img/image-5.jpg" alt="" />
+          <p class="caption">
+            <span>Audi e-tron GT:</span> The Audi e-tron GT is an all-electric
+            <br />
+            grand tourer that combines stunning aesthetics with powerful <br />
+            electric performance. It features dual electric motors that deliver
+            <br />
+            exceptional acceleration and handling. With its luxurious interior,
+            <br />
+            cutting-edge technology, and impressive range, the e-tron GT sets a
+            <br />
+            new standard for electric supercars, making it an exciting option
+            <br />
+            for environmentally conscious enthusiasts.
+          </p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <section id="about-audi" class="my-5">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Audi Supercar</h2>
+          </div>
+        </div>
+        <div id="audiCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi R8</h4>
+                    <img src="img/img-1.png" alt="Audi R8" class="car-img" />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi Skysphere</h4>
+                    <img
+                      src="img/img-2.png"
+                      alt="Audi Skysphere"
+                      class="car-img"
+                    />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi R8-Sport</h4>
+                    <img
+                      src="img/img-3.png"
+                      alt="Audi R8-Sport"
+                      class="car-img"
+                    />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi RS6</h4>
+                    <img src="img/img-4.png" alt="Audi RS6" class="car-img" />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi RS5</h4>
+                    <img src="img/img-5.png" alt="Audi RS5" class="car-img" />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="car-box tilt" data-tilt>
+                    <h4 class="car-name">Audi 100 Coupé S</h4>
+                    <img
+                      src="img/img-6.png"
+                      alt="Audi 100 Coupé S"
+                      class="car-img"
+                    />
+                    <a href="#" class="btn btn-light car-detail-button"
+                      >Show More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#audiCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#audiCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="financing-section">
+      <h1>OUR SERVICE</h1>
+      <div class="service">
+        <img
+          src="img/service-1.jpg"
+          alt="CarShop Brochure"
+          class="brochure-image"
+        />
+        <div class="text-box">
+          <h1>We take the antsy out <br />of financing.</h1>
+          <p>
+            You know CarShop is all about no hassle, and when it comes to
+            financing it’s no different. We work with 20+ national and local
+            lenders that assures you get the best possible financing options.
+          </p>
+          <button class="financing-button">Get Financing</button>
+        </div>
+      </div>
+
+      <div class="service">
+        <img
+          src="img/service-2.jpg"
+          alt="CarShop Brochure"
+          class="brochure-image"
+        />
+        <div class="text-box">
+          <h1>Transparent business practicese.</h1>
+          <p>
+            You know CarShop is all about no hassle, and when it comes to
+            financing it’s no different. We work with 20+ national and local
+            lenders that assures you get the best possible financing options.
+          </p>
+          <button class="financing-button">Get Financing</button>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="text-box">
+          <h1>
+            The Power of Collaboration <br />
+            in the Supercar Industry
+          </h1>
+          <p>
+            Collaborative efforts among leading manufacturers and technology
+            providers drive innovation, pushing the boundaries of performance
+            and design in the supercar sector.
+          </p>
+          <button class="financing-button">Get Financing</button>
+        </div>
+
+        <img
+          src="img/service-3.jpg"
+          alt="CarShop Brochure"
+          class="brochure-image"
+        />
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <h1>Highlight of Audi</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <video
+            style="width: 100%; height: 100%; object-fit: cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="vid/vid-1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video
+            style="width: 100%; height: 100%; object-fit: cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="vid/vid-2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video
+            style="width: 100%; height: 100%; object-fit: cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="vid/vid-3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video
+            style="width: 100%; height: 100%; object-fit: cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="vid/vid-4.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="swiper-slide">
+          <video
+            style="width: 100%; height: 100%; object-fit: cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="vid/vid-5.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="buy-section">
+      <h1>SHOP THE AUDI SUPER CAR</h1>
+      <img src="img/audi-rs.png" alt="" />
+      <div class="buy-container">
+        <div class="buy-buttons">
+          <a href="#">Build & Price</a>
+        </div>
+        <div class="buy-buttons">
+          <a href="#">Contact Dealer</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="/about">Our Story</a></li>
+            <li><a href="/mission">Mission & Vision</a></li>
+            <li><a href="/team">Meet the Team</a></li>
+            <li><a href="/careers">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/returns">Returns & Exchanges</a></li>
+            <li><a href="/shipping">Shipping Information</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="https://facebook.com/shopcar" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com/shopcar" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/shopcar" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/company/shopcar" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Information</h3>
+          <p>Email: support@shopcar.com</p>
+          <p>Phone: +1 (800) 123-4567</p>
+          <p>Address: 123 Car Street, Auto City, AC 12345</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 ShopCar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <!-- Tilt js -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+
+    <!-- Boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script js -->
+    <script src="script.js"></script>
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
